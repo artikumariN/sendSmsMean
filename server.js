@@ -22,11 +22,7 @@
           to:'+91'+req.body.mobileNO,
           from:'+18067310390',
           body:req.body.msg
-      }).then(function(err,message){
-        if(err)
-        {
-          res.send("Error");
-        }
+      }).then(function(message)
         res.send("Message has been send Successfull!")
       });;
     });
