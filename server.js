@@ -19,7 +19,7 @@
       console.log(req.body);
       client.messages.create
       ({
-          to:req.body.mobileNO,
+          to:'91'+req.body.mobileNO,
           from:'+18067310390',
           body:req.body.msg
       }).then(function(err,message){
